@@ -3,7 +3,7 @@ import Head from "next/head";
 import type { NextPage } from "next";
 import type { ReactElement, ReactNode } from "react";
 import { Jost } from "next/font/google";
-import "../styles/globals.css";
+import "@/styles/globals.css";
 
 const jost = Jost({ subsets: ["latin"] });
 
