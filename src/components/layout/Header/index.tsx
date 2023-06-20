@@ -4,7 +4,7 @@ import NavMenuMobile from "@/components/layout/NavMenuMobile";
 
 export default function Header() {
   return (
-    <header className="align-center flex h-full w-full justify-between px-28 py-8">
+    <header className="align-center flex h-full w-full justify-between px-8 py-8 sm:px-14 lg:px-28">
       <Image
         src="/assets/shared/desktop/logo-dark.png"
         width={0}

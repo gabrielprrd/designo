@@ -6,7 +6,6 @@ export default function NavMenuDesktop() {
     <div className="align-center hidden gap-5 sm:flex">
       {NAV_MENU_LINKS.map((l) => (
         <Link
-          as="a"
           key={"link_nav_" + l.label}
           href={l.href}
           className="uppercase leading-6 tracking-widest no-underline hover:border-b"
