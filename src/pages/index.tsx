@@ -93,9 +93,9 @@ export default function Home() {
             />
           </div>
           <div className="flex w-full flex-col gap-5">
-            {PROJECTS.filter((p, i) => i > 0).map((p) => (
+            {PROJECTS.filter((p, i) => i > 0).map((p, i) => (
               <ImageBackgroundLink
-                key={p.title}
+                key={p.title || `keyForImgBgLinkAtHomePage_${i}`}
                 title={p.title}
                 cta={p.cta}
                 srcMobile={p.srcMobile}
