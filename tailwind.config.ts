@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "very-light-peach": "#FDF3F0",
         "light-peach": "#FFAD9B",
         peach: "#E7816B",
         black: "#1D1C1E",
@@ -16,7 +17,19 @@ export default {
           "url('/assets/home/desktop/bg-pattern-hero-home.svg')",
         "pattern-call-to-action":
           "url('/assets/shared/desktop/bg-pattern-call-to-action.svg')",
+        "pattern-two-circles":
+          "url(/assets/shared/desktop/bg-pattern-two-circles.svg)",
+        "pattern-three-circles":
+          "url(/assets/shared/desktop/bg-pattern-three-circles.svg)",
+        "pattern-small-circle":
+          "url(/assets/shared/desktop/bg-pattern-small-circle.svg)",
         "pattern-leaf": "url('/assets/shared/desktop/bg-pattern-leaf.svg')",
+        "web-design-transfer":
+          "url(/assets/web-design/desktop/image-transfer.jpg)",
+        "pattern-hero-about-desktop":
+          "url(/assets/about/desktop/bg-pattern-hero-about-desktop.svg)",
+        "pattern-hero-about-mobile":
+          "url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)",
       },
       screens: {
         sm: "640px",
