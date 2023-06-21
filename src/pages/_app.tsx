@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import type { ReactElement, ReactNode } from "react";
 import { Jost } from "next/font/google";
 import "@/styles/globals.css";
+import "leaflet/dist/leaflet.css";
 
 const jost = Jost({ subsets: ["latin"] });
 
