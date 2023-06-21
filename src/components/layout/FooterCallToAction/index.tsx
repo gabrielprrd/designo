@@ -9,7 +9,7 @@ export default function FooterCallToAction() {
         </p>
       </div>
       <div className="flex flex-1 items-center justify-end">
-        <button className="rounded-md bg-white bg-white px-4 py-4 uppercase tracking-wide text-black hover:bg-light-peach hover:text-white sm:px-5 sm:py-3">
+        <button className="rounded-md bg-white px-4 py-4 uppercase tracking-wide text-black hover:bg-light-peach hover:text-white sm:px-5 sm:py-3">
           Get in touch
         </button>
       </div>
