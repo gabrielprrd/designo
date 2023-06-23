@@ -2,6 +2,7 @@ import IllustrationAustralia from "../../../public/assets/shared/desktop/illustr
 import IllustrationUK from "../../../public/assets/shared/desktop/illustration-united-kingdom.svg";
 import IllustrationCanada from "../../../public/assets/shared/desktop/illustration-canada.svg";
 import BgPatternSmallCircle from "../../../public/assets/shared/desktop/bg-pattern-small-circle.svg";
+import Link from "next/link";
 
 const LOCATIONS = [
   {
@@ -36,9 +37,12 @@ export default function LocationsCtaSection() {
             </div>
             <div className="flex flex-col items-center gap-5">
               <p className="uppercase tracking-widest">{l.title}</p>
-              <button className="rounded-md bg-peach px-4 py-4 uppercase tracking-wide text-white hover:bg-light-peach sm:px-5 sm:py-3">
+              <Link
+                href="/locations"
+                className="rounded-md bg-peach px-4 py-4 uppercase tracking-wide text-white hover:bg-light-peach sm:px-5 sm:py-3"
+              >
                 See location
-              </button>
+              </Link>
             </div>
           </div>
         );
