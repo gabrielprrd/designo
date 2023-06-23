@@ -28,7 +28,8 @@ export default function CardMap(props: Props) {
           style={{
             height: "100%",
             width: "100%",
-            borderRadius: isSm ? "0.5rem" : "none",
+            borderRadius: isSm ? "none" : "0.5rem",
+            zIndex: -10,
           }}
         />
       </div>

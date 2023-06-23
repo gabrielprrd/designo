@@ -18,7 +18,7 @@ export default function NavMenuMobile() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Menu.Items className="absolute left-0 z-10 mt-7 hidden w-screen flex-col gap-10 bg-black p-5 py-10 tracking-widest text-white ui-open:flex">
+              <Menu.Items className="absolute left-0 mt-7 hidden w-screen flex-col gap-10 bg-black p-5 py-10 tracking-widest text-white ui-open:flex">
                 {NAV_MENU_LINKS.map((l) => (
                   <Menu.Item
                     as="a"
