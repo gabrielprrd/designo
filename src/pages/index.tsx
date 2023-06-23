@@ -70,6 +70,7 @@ export default function Home() {
               className="sm:-bottom-84 lg: absolute -bottom-64 -left-[500%] -right-[500%] m-auto h-auto max-w-[150%] lg:-bottom-1/3 lg:min-w-[120%]"
               width="500"
               height="500"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               src="/assets/home/desktop/image-hero-phone.png"
               alt="Phone"
             />
