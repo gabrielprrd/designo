@@ -8,6 +8,8 @@ Locations.getLayout = function (page: ReactElement) {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
 
+const isEven = (number: number) => number % 2 !== 0;
+
 export default function Locations() {
   return (
     <>
@@ -20,17 +22,11 @@ export default function Locations() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="max-w-screen flex h-full flex-col gap-28">
-        <section className="flex flex-col gap-5 md:px-14 lg:px-28">
-          {OFFICES.map((office, index) => (
-            <CardMap
-              key={index}
-              reversed={!!(index % 2 !== 0)}
-              office={office}
-            />
-          ))}
-        </section>
-      </div>
+      <section className="flex h-full flex-col gap-5 md:px-14 lg:px-28">
+        {OFFICES.map((office, index) => (
+          <CardMap key={index} reversed={isEven(index)} office={office} />
+        ))}
+      </section>
     </>
   );
 }
