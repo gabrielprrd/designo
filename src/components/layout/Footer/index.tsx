@@ -44,7 +44,7 @@ export default function Footer({ ctaCard }: Props) {
   return (
     <div
       className={`${
-        ctaCard ? "-mt-16 md:-mt-4" : ""
+        ctaCard ? "-mt-16 md:-mt-4" : "mt-32"
       } flex h-auto w-full flex-col items-center gap-4`}
     >
       {ctaCard}
