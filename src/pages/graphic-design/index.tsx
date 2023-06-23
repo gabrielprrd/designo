@@ -17,7 +17,7 @@ const projects = PROJECTS.filter(
 const PORTFOLIO = [
   {
     title: "Tim Brown",
-    description: "A book cover designed for Tim Brown’s new release, ‘Change’",
+    description: "A book cover designed for Tim Brown's new release, 'Change'",
     href: "/",
     src: "/assets/graphic-design/desktop/image-change.jpg",
   },
