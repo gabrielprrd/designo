@@ -29,7 +29,7 @@ export default function CardMap(props: Props) {
             height: "100%",
             width: "100%",
             borderRadius: isSm ? "none" : "0.5rem",
-            zIndex: -10,
+            zIndex: 10,
           }}
         />
       </div>

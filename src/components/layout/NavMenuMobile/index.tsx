@@ -2,10 +2,11 @@ import { NAV_MENU_LINKS } from "@/constants/navMenuLinks";
 import { Menu, Transition } from "@headlessui/react";
 import IconBurger from "../../../../public/assets/shared/mobile/icon-hamburger.svg";
 import IconClose from "../../../../public/assets/shared/mobile/icon-close.svg";
+import Link from "next/link";
 
 export default function NavMenuMobile() {
   return (
-    <div className="sm:hidden">
+    <nav className="z-50 flex w-[50%] justify-end sm:hidden">
       <Menu>
         {({ open }) => (
           <>
