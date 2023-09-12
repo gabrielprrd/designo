@@ -19,22 +19,26 @@ export default function NavMenuMobile() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Menu.Items className="absolute left-0 mt-7 hidden w-screen flex-col gap-10 bg-black p-5 py-10 tracking-widest text-white ui-open:flex">
+              <Menu.Items
+                as="ul"
+                className="absolute left-0 mt-7 hidden w-screen flex-col gap-10 bg-black p-5 py-10 tracking-widest text-white ui-open:flex"
+              >
                 {NAV_MENU_LINKS.map((l) => (
-                  <Menu.Item
-                    as="a"
-                    key={"link_nav_" + l.label}
-                    href={l.href}
-                    className="text-2xl uppercase leading-6 no-underline"
-                  >
-                    {l.label}
-                  </Menu.Item>
+                  <li key={"link_nav_" + l.label}>
+                    <Menu.Item
+                      as={Link}
+                      href={l.href}
+                      className="text-2xl uppercase leading-6 no-underline"
+                    >
+                      {l.label}
+                    </Menu.Item>
+                  </li>
                 ))}
               </Menu.Items>
             </Transition>
           </>
         )}
       </Menu>
-    </div>
+    </nav>
   );
 }
