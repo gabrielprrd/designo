@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import ImageBackgroundLink from "@/components/ImageBackgroundLink";
 import { PROJECTS } from "@/constants/projects";
 import CardLink from "@/components/CardLink";
+import { GRAPHIC_DESIGN_PORTFOLIO as PORTFOLIO } from "@/constants/graphicDesignPortfolio";
 
 GraphicDesign.getLayout = function (page: ReactElement) {
   return <DefaultLayout>{page}</DefaultLayout>;
@@ -13,28 +14,6 @@ GraphicDesign.getLayout = function (page: ReactElement) {
 const projects = PROJECTS.filter(
   (p) => p.title === "App Design" || p.title === "Web Design"
 );
-
-const PORTFOLIO = [
-  {
-    title: "Tim Brown",
-    description: "A book cover designed for Tim Brown's new release, 'Change'",
-    href: "/",
-    src: "/assets/graphic-design/desktop/image-change.jpg",
-  },
-  {
-    title: "Boxed Water",
-    description: "A simple packaging concept made for Boxed Water",
-    href: "/",
-    src: "/assets/graphic-design/desktop/image-boxed-water.jpg",
-  },
-  {
-    title: "Science!",
-    description:
-      "Get to meet your favorite internet superstar with the faceit apps",
-    href: "/",
-    src: "/assets/graphic-design/desktop/image-science.jpg",
-  },
-];
 
 export default function GraphicDesign() {
   return (
@@ -67,7 +46,7 @@ export default function GraphicDesign() {
           ))}
         </section>
 
-        <section className="flex flex-row-reverse flex-col flex-col-reverse gap-5 px-2 md:px-14 lg:flex-row lg:px-28">
+        <section className="flex flex-col-reverse gap-5 px-2 md:px-14 lg:flex-row lg:px-28">
           {projects.map((project, index) => (
             <ImageBackgroundLink
               key={project.title || `keyForImgBgLinkAtGraphicDesign_${index}`}
