@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="align-center flex h-full w-full justify-between px-8 py-8 sm:px-14 lg:px-28">
+    <header className="flex items-center justify-between p-8 sm:px-14 lg:px-28">
       <Link href="/">
         <Image
           src="/assets/shared/desktop/logo-dark.png"
