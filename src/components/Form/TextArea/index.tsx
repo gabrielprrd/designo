@@ -5,16 +5,16 @@ interface TextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> {
   name: string;
 }
 
-export function TextArea({ className, ...props }: TextAreaProps) {
+export function TextArea({ className, name, ...props }: TextAreaProps) {
   const { register } = useFormContext();
 
   return (
     <textarea
-      id={props.name}
-      className={`border-b bg-transparent p-2 text-white hover:border-b-2 focus:border-b-2 focus:outline-none ${
+      id={name}
+      className={`absolute left-0 w-full border-b bg-transparent px-4 pr-32 text-white placeholder:text-white hover:border-b-2 focus:border-b-2 focus:outline-none ${
         className ?? ""
       }`}
-      {...register(props.name)}
+      {...register(name)}
       {...props}
     />
   );

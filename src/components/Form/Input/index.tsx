@@ -5,16 +5,16 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
 }
 
-export function Input({ className, ...props }: InputProps) {
+export function Input({ className, name, ...props }: InputProps) {
   const { register } = useFormContext();
 
   return (
     <input
-      id={props.name}
-      className={`border-b bg-transparent p-2 text-white hover:border-b-2 focus:border-b-2 focus:outline-none ${
+      id={name}
+      className={`absolute h-full w-full border-b bg-transparent px-4 pr-32 text-white placeholder:text-white hover:border-b-2 focus:border-b-2 focus:outline-none ${
         className ?? ""
       }`}
-      {...register(props.name)}
+      {...register(name)}
       {...props}
     />
   );

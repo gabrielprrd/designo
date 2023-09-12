@@ -17,7 +17,7 @@ export function ErrorMessage({ className, field }: ErrorMessageProps) {
 
   return (
     <span
-      className={`flex gap-2 bg-peach text-sm italic text-white ${
+      className={`absolute right-2 top-1/4 flex gap-2 bg-transparent pl-1 text-sm italic text-white ${
         className ?? ""
       }`}
     >
